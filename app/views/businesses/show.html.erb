@@ -1,0 +1,11 @@
+<h1> Whelcome to <%= @business.name %></h1>
+
+<p><%= @business.description %></p>
+
+<br>
+
+<h3><%= @business.name %> selection:</h3>
+
+<% @items.each do |i| %>
+<p> ///// <%= i.name %> - €<%= i.price %> - <%= link_to "Buy", edit_user_path %></p>
+<% end %>

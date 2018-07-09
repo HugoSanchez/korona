@@ -1,0 +1,19 @@
+<% if @user == current_user %>
+
+  <h1> Hi, <%= @user.username %> </h1>
+
+  <h3>Your current Balance is: $<%= @user.balance %></h3>
+
+  <h4>Transaction History:</h4>
+
+  <% past_balance = @user.balance %>
+
+  <% @transactions.each do |t| %>
+    <% past_balance = past_balance + t.amount %>
+    <p>€<%= t.amount %> - <%= link_to t.business.name, t.business %> - Balance was: <%= past_balance%></p>
+  <% end %>
+
+  <% else %>
+  <p><%= flash[:authorize] %></p>
+
+<% end %>

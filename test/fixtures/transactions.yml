@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user_id: one
+  business_id: one
+  amount: 1.5
+  date: 2018-07-08 12:44:46
+
+two:
+  user_id: two
+  business_id: two
+  amount: 1.5
+  date: 2018-07-08 12:44:46

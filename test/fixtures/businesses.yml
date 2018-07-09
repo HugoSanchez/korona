@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: 
+  password_digest: 
+  balance: 1.5
+
+two:
+  name: 
+  password_digest: 
+  balance: 1.5
